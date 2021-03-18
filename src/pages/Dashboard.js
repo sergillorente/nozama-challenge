@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import './Dashboard.css'
+import Graph from './../components/Graph'
 
 const Dashboard = () => {
 
@@ -21,6 +22,7 @@ const Dashboard = () => {
         <div>
             <img className="dashboard__logo" src="/images/nozama_logo.png" alt="logo" />
             <h1 className="dashboard__title">Challenge</h1>
+            <Graph />
         </div>
     )
 }
