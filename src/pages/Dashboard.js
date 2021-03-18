@@ -5,7 +5,7 @@ import Graph from './../components/Graph'
 
 const Dashboard = () => {
 
-    const [ date, setDate ] = useState('')
+    const [ selectedDate, setSelectedDate ] = useState('')
     const [ TRR, setTRR ] = useState('')
     const [ recovered, setRecovered ] = useState('')
     const [ graphData, setGraphData ] = useState('')
