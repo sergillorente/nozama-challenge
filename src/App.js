@@ -1,9 +1,12 @@
 import React from 'react'
 
+import './App.css'
+import Dashboard from './pages/Dashboard'
+
 const App = () => {
     return (
         <div>
-            Hello World!
+            <Dashboard />
         </div>
     )
 }

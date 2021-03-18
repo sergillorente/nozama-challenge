@@ -1,0 +1,9 @@
+.dashboard__logo {
+    width: 100%;
+    height: auto;
+}
+
+.dashboard__title {
+    text-transform: uppercase;
+    text-align: center;
+}
