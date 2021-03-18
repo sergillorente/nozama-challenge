@@ -1,0 +1,7 @@
+const data = [
+    {
+        date: '',
+        TRR: '',
+        Recovered: ''
+    }
+]
