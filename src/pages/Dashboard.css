@@ -6,4 +6,5 @@
 .dashboard__title {
     text-transform: uppercase;
     text-align: center;
+    font-size: 12vw;
 }
