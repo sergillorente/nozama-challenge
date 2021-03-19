@@ -1,5 +1,8 @@
 import React from 'react'
 
+import './Components.css'
+import Card from './Card'
+
 const Calendar = () => {
     return (
         <div>

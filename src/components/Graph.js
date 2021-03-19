@@ -1,12 +1,8 @@
 import React from 'react'
 import { Line, defaults } from 'react-chartjs-2'
 
-import data from './../lib/data.json'
-
-// for the gradient color, it is always this dark green color but at the bottom 
-// is very whitish and to the top is gets greenish
-defaults.global.tooltips.enabled = false
-
+import './Components.css'
+import Card from './Card'
 
 const Graph = ({ labels, data, units }) => {
 

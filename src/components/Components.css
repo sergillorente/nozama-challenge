@@ -1,0 +1,8 @@
+.small-card {
+    display: flex;
+}
+
+.small__icon {
+    width: 5%;
+    height: 5%;
+}
