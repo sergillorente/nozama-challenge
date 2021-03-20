@@ -9,11 +9,11 @@ const useStyles = makeStyles({
         paddingBottom: "1.5em"
     },
     icon: {
-        width: "8%",
-        height: "8%"
+        width: "7vw",
+        height: "7vw"
     },
     input: {
-        fontSize: '3vw'
+        fontSize: '4vw'
     }
 })
 
@@ -27,7 +27,7 @@ const Calendar = ({ value, onChange }) => {
                 autoOk
                 disableToolbar
                 InputAdornmentProps={{ position: "start" }}
-                keyboardIcon={<Avatar variant="square" src={'/images/calendar.png'}></Avatar>}
+                keyboardIcon={<Avatar className={classes.icon} variant="square" src={'/images/calendar.png'}></Avatar>}
                 variant="inline"
                 inputVariant="outlined"
                 format="EEEE dd, MMMM, yyyy"

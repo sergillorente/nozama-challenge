@@ -18,8 +18,8 @@ const useStyles = makeStyles({
     },
     icon: {
         marginRight: '0.5em',
-        width: "8%",
-        height: "8%"
+        width: "9vw",
+        height: "9vw"
     },
     h5: {
         fontSize: "4vw"
@@ -35,7 +35,7 @@ const Card = ({ children, icon, title }) => {
             elevation={5}
         >
             <div className={classes.container}>
-                <Avatar className={classes.icon} src={icon} />
+                <Avatar className={classes.icon} variant="square"src={icon} />
                 <Typography className={classes.h5} variant="h5">{title}</Typography>
             </div>
             {children}
