@@ -13,7 +13,8 @@ const useStyles = makeStyles({
         paddingBottom: "1.5em"
     },
     root: {
-        padding: "1.5em"
+        padding: "1.5em",
+        marginBottom: "1.5em"
     },
     icon: {
         marginRight: '0.5em',

@@ -22,14 +22,15 @@ const useStyles = makeStyles({
     h2: {
         textTransform: 'uppercase',
         color: "grey",
-        fontSize: "6vw"
+        fontSize: "9vw",
+        letterSpacing: "0.1em"
     }
 })
 
 const Dashboard = () => {
-    const [selectedDate, setSelectedDate] = useState('')
-    const [selectedTRR, setSelectedTRR] = useState('')
-    const [recovered, setRecovered] = useState('')
+    const [selectedDate, setSelectedDate] = useState(new Date('01/01/2020'))
+    const [TRRValue, setTRRValue] = useState(270)
+    const [recoveredValue, setRecoveredValue] = useState(300)
 
     const classes = useStyles()
 
@@ -41,6 +42,15 @@ const Dashboard = () => {
         // update values [date] 
     })
 
+    const randomNumber = (min, max) => {
+        return Math.floor(Math.random() * (max - min) + min)
+    }
+
+    const handleChange = (value) => {
+        console.log(value);
+        setSelectedDate(value)
+    }
+
     return (
         <div>
             <div className="header">
@@ -48,15 +58,13 @@ const Dashboard = () => {
                 <Typography className={classes.h2} align="center" variant="h2">Challenge</Typography>
             </div>
             <div>
-            {/* <Card icon={'/images/calendar.png'}>
-                <Calendar  />
-            </Card>
-            <Card icon={'/images/recycling.png'} title={'Recovered'}>
-                <Recovered />
-            </Card>
-            <Card icon={'/images/trr.png'} title={'T.R.R'}>
-                <TRR />
-            </Card> */}
+                <Calendar value={selectedDate} onChange={handleChange}/>
+                <Card icon={'/images/recycling.png'} title={'Recovered'}>
+                    <Recovered value={recoveredValue} />
+                </Card>
+                <Card icon={'/images/trr.png'} title={'T.R.R'}>
+                    <TRR value={TRRValue} />
+                </Card>
             </div>
             <Card title="Recovered" icon={'/images/recycling.png'}>
                 <Graph

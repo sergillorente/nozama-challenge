@@ -1,8 +1,6 @@
 import React from 'react'
-import { Line, defaults } from 'react-chartjs-2'
+import { Line } from 'react-chartjs-2'
 
-import './Components.css'
-import Card from './Card'
 
 const Graph = ({ labels, data, units }) => {
 

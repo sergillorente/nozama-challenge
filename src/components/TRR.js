@@ -1,13 +1,31 @@
 import React from 'react'
+import { Typography } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
 
-import Card from './Card'
+const useStyles = makeStyles({
+    unit: {
+        fontWeight: "300",
+        marginLeft: "0.1em",
+        fontSize: "6vw"
+    },
+    container: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "baseline"
+    },
+    h3: {
+        fontSize: "9vw"
+    }
+})
 
-const TRR = ({ icon, title }) => {
+const TRR = ({ value }) => {
+    const classes = useStyles()
+
     return (
-        <div>
-            <img className src={icon} alt="TRR" />
-            <h3>{title}</h3>
-        </div>
+    <div className={classes.container}>
+        <Typography className={classes.h3} variant="h3" align="center">{value}</Typography>
+        <Typography className={classes.unit} variant="h4" align="center">Kg.</Typography>
+    </div>
     )
 }
 

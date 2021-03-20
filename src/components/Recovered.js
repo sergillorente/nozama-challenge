@@ -1,13 +1,18 @@
+import { Typography } from '@material-ui/core'
 import React from 'react'
+import { makeStyles } from '@material-ui/core/styles';
 
-import './Components.css'
-import Card from './Card'
+const useStyles = makeStyles({
+    h3: {
+        fontSize: "9vw"
+    }
+})
 
-const Recovered = () => {
+
+const Recovered = ({ value }) => {
+    const classes = useStyles()
     return (
-        <div>
-            
-        </div>
+    <Typography className={classes.h3} variant="h3" align="center">{value}</Typography>
     )
 }
 
