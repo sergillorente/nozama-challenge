@@ -31,6 +31,7 @@ const Graph = ({ labels, data, units }) => {
     return <Line
         data={chartData}
         options={{
+            width: "100%",
             // maintainAspectRatio: false,
             scales: {
                 yAxes: [
