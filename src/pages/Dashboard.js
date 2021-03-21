@@ -23,7 +23,11 @@ const useStyles = makeStyles({
         textTransform: 'uppercase',
         color: "grey",
         fontSize: "9vw",
-        letterSpacing: "0.1em"
+        letterSpacing: "0.1em",
+        '@media (min-width: 46.875em)' : {
+            fontSize: '5vw',
+            marginTop: '2%'
+        }
     }
 })
 

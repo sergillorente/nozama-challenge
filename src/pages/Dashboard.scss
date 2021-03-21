@@ -9,3 +9,15 @@
     
 }
 
+@media (min-width: 46.875em) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .dashboard__logo {
+            width: 32%;
+            height: auto;
+        }
+    }
+
+}
