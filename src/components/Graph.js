@@ -3,10 +3,11 @@ import { Line } from 'react-chartjs-2'
 
 
 const Graph = ({ labels, data, units }) => {
+    const gradientHeight = window.innerWidth > 750 ? 450 : 200
 
     const chartData = (canvas) => {
         const ctx = canvas.getContext("2d")
-        const gradient = ctx.createLinearGradient(0, 0, 0, 250)
+        const gradient = ctx.createLinearGradient(0, 0, 0, gradientHeight)
         gradient.addColorStop(0, 'rgba(100,124,100,1)')
         gradient.addColorStop(1, 'rgba(100,124,100,0)')
 
@@ -30,7 +31,6 @@ const Graph = ({ labels, data, units }) => {
         data={chartData}
         options={{
             width: "100%",
-            // maintainAspectRatio: false,
             scales: {
                 yAxes: [
                     {

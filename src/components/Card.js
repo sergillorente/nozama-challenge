@@ -1,9 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia'; // it is used for the images
 import { Avatar, Paper, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -19,10 +15,17 @@ const useStyles = makeStyles({
     icon: {
         marginRight: '0.5em',
         width: "9vw",
-        height: "9vw"
+        height: "9vw",
+        '@media (min-width: 46.875em)': {
+            width: "3vw",
+            height: "3vw"
+        }
     },
     h5: {
-        fontSize: "4vw"
+        fontSize: "4vw",
+        '@media (min-width: 46.875em)': {
+            fontSize: "1.5vw"
+        }
     }
 })
 

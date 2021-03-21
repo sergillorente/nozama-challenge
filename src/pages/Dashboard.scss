@@ -15,9 +15,21 @@
         justify-content: space-between;
 
         .dashboard__logo {
-            width: 32%;
+            width: 25%;
             height: auto;
         }
     }
 
+    .middle-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4em;
+        align-items: end;
+    }
+
 }
+
+.MuiPickersDay-daySelected {
+    background-color: #6f856f!important;
+  }
+  

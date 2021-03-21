@@ -4,7 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     h3: {
-        fontSize: "9vw"
+        fontSize: "9vw",
+        fontWeight: "600",
+        '@media (min-width: 46.875em)': {
+            fontSize: '3vw'
+        }
     }
 })
 

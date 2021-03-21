@@ -1,5 +1,5 @@
 *, *::before, *::after { box-sizing: border-box;}
 
 #root {
-    padding: 1.5em
+    padding: 1.5em;
 }
