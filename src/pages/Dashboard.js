@@ -17,7 +17,7 @@ const useStyles = makeStyles({
         border: 0,
         borderRadius: 15,
         color: 'red',
-        padding: '0 30px',
+        padding: '0 30px'
     },
     h2: {
         textTransform: 'uppercase',
@@ -64,7 +64,7 @@ const Dashboard = () => {
                     <Recovered value={recoveredValue} />
                 </Card>
             </div>
-            <Card title="Recovered" icon={'/images/recycling.png'}>
+            <Card icon={'/images/recycling.png'} title={"Recovered"}>
                 <Graph
                     data={data}
                     labels={data.map(value => value.x)}
